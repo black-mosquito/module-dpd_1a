@@ -5,7 +5,7 @@
             <dpd_1a>
                 <active>1</active>
                 <sallowspecific>0</sallowspecific>
-                <model>Blackmosquito\Nachname\Model\Carrier\DPD_1A</model>
+                <model>Blackmosquito\DPD_1A\Model\Carrier\DPD_1A</model>
                 <name>BM DPD_1A</name>
                 <price>7.50</price>
                 <title>BM-DPD_1A</title>
