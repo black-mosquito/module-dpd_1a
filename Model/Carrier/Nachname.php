@@ -1,16 +1,16 @@
 <?php
-namespace Blackmosquito\Nachname\Model\Carrier;
+namespace Blackmosquito\DPD_1A\Model\Carrier;
  
 use Magento\Quote\Model\Quote\Address\RateRequest;
 use Magento\Shipping\Model\Rate\Result;
  
-class Nachname extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
+class DPD_1A extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
     \Magento\Shipping\Model\Carrier\CarrierInterface
 {
     /**
      * @var string
      */
-    protected $_code = 'nachname';
+    protected $_code = 'dpd_1a';
  
     /**
      * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
@@ -38,7 +38,7 @@ class Nachname extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
      */
     public function getAllowedMethods()
     {
-        return ['nachname' => $this->getConfigData('name')];
+        return ['dpd_1a' => $this->getConfigData('name')];
     }
  
     /**
@@ -57,10 +57,10 @@ class Nachname extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
         /** @var \Magento\Quote\Model\Quote\Address\RateResult\Method $method */
         $method = $this->_rateMethodFactory->create();
  
-        $method->setCarrier('nachname');
+        $method->setCarrier('dpd_1a');
         $method->setCarrierTitle($this->getConfigData('title'));
  
-        $method->setMethod('nachname');
+        $method->setMethod('dpd_1a');
         $method->setMethodTitle($this->getConfigData('name'));
  
         /*you can fetch shipping price from different sources over some APIs, we used price from config.xml - xml node price*/
