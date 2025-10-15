@@ -2,16 +2,16 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <carriers>
-            <nachname>
+            <dpd_1a>
                 <active>1</active>
                 <sallowspecific>0</sallowspecific>
-                <model>Blackmosquito\Nachname\Model\Carrier\Nachname</model>
-                <name>BM Nachname</name>
+                <model>Blackmosquito\Nachname\Model\Carrier\DPD_1A</model>
+                <name>BM DPD_1A</name>
                 <price>7.50</price>
-                <title>BM-Nachname</title>
+                <title>BM-DPD_1A</title>
                 <type>I</type>
                 <specificerrmsg>---</specificerrmsg>
-            </nachname>
+            </dpd_1a>
         </carriers>
     </default>
 </config> 
